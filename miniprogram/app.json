@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/location/location",
+    "pages/demo1/dwmo1",
+    "pages/more/more",
+    "pages/my/my",
+    "pages/map/map",
+    "pages/code/code",
+    "pages/blog/blog",
+    "pages/safe/safe",
+    "pages/subject/subject",
+    "pages/set/set",
+    "pages/wzx/wzx",
+    "pages/responsive/responsive",
+    "pages/useInComponent/useInComponent",
+    "pages/learnmb/learnmb",
+    "pages/wenj/wenj"
+   
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "tcu云开发",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color":"#ccc",
+    "selectedColor":"#000",
+    "backgroundColor":"#fff",
+    "list":[{
+        "text":"首页",
+        "pagePath":"pages/index/index",
+        "iconPath":"image/sy.png",
+        "selectedIconPath":"image/sys.png"
+     },{
+        "pagePath":"pages/more/more",
+      "text":"更多",
+       "iconPath":"image/gn.png",
+       "selectedIconPath":"image/gns.png"
+      },{
+       "pagePath":"pages/my/my",
+       "text":"我的",
+       "iconPath":"image/my.png",
+       "selectedIconPath":"image/mys.png"
+     }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

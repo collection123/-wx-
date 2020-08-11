@@ -1,0 +1,28 @@
+/* pages/set/set.wxss */
+
+.top{
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  color: black;
+  width: 100%;
+  border-radius: 30rpx;
+  height: 900rpx;
+}
+.keming{
+  margin-top: 20rpx;
+  background-color: white;
+  width:100%;
+  border-radius: 50rpx;
+}
+.btn{
+  font-size: large;
+}
+.ct{
+  font-size: 50rpx;
+  background-color: white;
+  height: 80rpx;
+}
+.kb{
+  height: 60rpx;
+}

@@ -1,0 +1,7 @@
+<!--pages/map/map.wxml-->
+<text class="wz" >下拉可进入预览哦！</text>
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/timg.jpeg"  class="map"  > </image>
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/map2.jpg"></image>
+
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/map3.jpeg"></image>
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/地铁.jpeg"></image>

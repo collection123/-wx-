@@ -1,0 +1,3 @@
+/* pages/map/map.wxss */
+.wz{font-size: xx-large;color: black;}
+.map{width: 600rpx; height: 800rpx;}

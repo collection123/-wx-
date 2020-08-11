@@ -1,0 +1,4 @@
+<button bindtap="updateData" type="primary">更新一条日志</button>
+<text decode="{{true}}">&nbsp;</text>
+<input placeholder="输入内容" bindinput="Input" > </input>
+<button type="primary" bindtap="btnNum">获取记录个数</button>

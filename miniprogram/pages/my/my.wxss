@@ -1,0 +1,96 @@
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.userinfo{
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  transition: all 300ms ease;
+}
+.info{flex-direction: column;display: flex;justify-items: center;}
+.nic{font-size: larger;margin-top: 8rpx;}
+.tz{margin-left: 15rpx; margin-top: 10rpx; color: black;font-size:medium;}
+.userinfo image{width: 110rpx;height: 110rpx;border-radius: 50%;overflow: hidden;
+margin-top: 18rpx;}
+.btndl{margin-top: 30rpx;background-color: turquoise;margin-bottom: 30rpx;}
+.hovbing{background-color: whitesmoke;}
+.bingwz{ font-size:medium; color: rgb(139, 203, 223); margin-bottom:5 rpx;}
+.my1{
+  margin-top: 80rpx;
+  height: 90rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  transition: all 300ms ease;
+}
+.my2{
+  margin-top: 20rpx;
+  height: 90rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  transition: all 300ms ease;
+}
+.my3{
+  margin-top: 20rpx;
+  height: 90rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  transition: all 300ms ease;
+}
+.my4{
+  margin-top: 20rpx;
+  height: 90rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  transition: all 300ms ease;
+}
+
+.inputk{
+  margin-top: 100rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.inputxm{
+  margin-top: 10rpx;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.inputxm image{width:110rpx;margin-left: 50rpx;}
+.inputk image{width:110rpx;margin-left: 50rpx;}
+.xh{width:60%;height: 70rpx; border: 3rpx solid gray;margin-left: 2rpx;}
+.xm{width:60%;height: 70rpx; border: 3rpx solid gray;margin-left: 2rpx;}

@@ -1,0 +1,29 @@
+<!--pages/blog/blog.wxml-->
+<form bindsubmit="blogsub">
+<!--标题和笔名-->
+<view class="inp"> 
+<input name="title" placeholder="请输入您的标题..." class="input" ></input>
+<input name="author" placeholder="请输入您的笔名或昵称..." class="input" ></input>
+</view>
+<textarea placeholder="{{content[hour]}}" class="bkct" maxlength="200" name="content" ></textarea>
+
+
+
+
+<text class="word-class">上传图片：</text>
+<!--以下为图片选择-->
+<view class="img_box">
+  <view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+    <image src='{{item}}' bindlongpress="DeleteImg" bindtap="PreviewImg" data-index="{{index}}" mode='widthFix' />
+  </view>
+  <view class="imgs">
+    <view class="images" bindtap="ChooseImg">
+      <!--这里自行创建image文件夹，并添加choose.png，及中部加号-->
+      <image src='cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/数量选择_加号.png' mode='widthFix' />
+    </view>
+  </view>
+</view>
+<!--以下为上传按钮-->
+
+<button type="primary" form-type="submit" disabled="{{btndis}}" >发表</button>
+</form>

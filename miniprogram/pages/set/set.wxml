@@ -1,0 +1,53 @@
+<!--pages/set/set.wxml-->
+
+<!--pages/set/set.wxml-->
+<view class='top'>
+
+  <view class='keming'>
+    <view class='btn' bindtap='bindButtonTap'>课程名称 </view>
+    <view class='btn2'>
+      <input type='text ' bindinput="bindKeyInput" maxlength='10 ' placeholder="请输入课程名称..." focus="{{focus}}" />
+    </view>
+  </view>
+
+  <view class='keming'>
+    <view class='btn' bindtap="bindButtonTap2">上课地点</view>
+    <view class='btn2'>
+      <input type='text ' bindinput="bindKeyInput2" maxlength='10' placeholder="请输入上课地点..." focus="{{focus2}}" />
+    </view>
+  </view>
+  <view class='keming'>
+    <view class='btn' bindtap="bindButtonTap6">上课时间</view>
+    <view class='btn2'>
+      <input type='text ' bindinput="bindKeyInput6" maxlength='1' placeholder="请输入星期数(数字)..." focus="{{focus6}}" />
+    </view>
+  </view>
+
+  <view class='keming'>
+    <view class='btn' bindtap="bindButtonTap3">上课时间</view>
+    <view class='btn2'>
+      <input type='number' bindinput="bindKeyInput3" minlength='1' maxlength='1' placeholder="请输入首节课的节数..." focus="{{focus3}}" />
+    </view>
+  </view>
+
+  <view class="ct">上课起止周数:</view>
+
+  <view class='keming'>
+    <view class='btn' bindtap="bindButtonTap4">开始周数</view>
+    <view class='btn2'>
+      <input type='number ' bindinput="bindKeyInput4" minlength='1' maxlength='2' placeholder="点击开始周数输入数字" focus="{{focus4}}" />
+    </view>
+  </view>
+
+  <view class='keming'>
+    <view class='btn' bindtap="bindButtonTap5">结束周数</view>
+    <view class='btn2'>
+      <input type='number ' bindinput="bindKeyInput5" minlength='1' maxlength='2' placeholder="点击结束周数输入数字" focus="{{focus5}}" />
+    </view>
+  </view>
+<view class="kb"></view>
+  <view>
+    <button bindtap="save" type='primary' disabled="{{able}}" >保存</button>
+  </view>
+
+</view>

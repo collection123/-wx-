@@ -1,0 +1,43 @@
+/* pages/wzx/wzx.wxss */
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.fir{
+  width: 100%;
+  height: 320rpx;
+  background-color: white;
+  align-items: center;
+}
+.sr{background-color: #f6f6f6;border-radius: 20rpx;width: 90%;height: 240rpx; 
+margin-left: 5%;}
+.wt{
+  
+  border-radius: 10rpx;
+
+  height: fit-content;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.wt text{
+  font-size: 40rpx;
+}
+.kb{
+  height: 20rpx;
+  background-color: #f6f6f6;
+}
+.pl{
+  width: 80%;
+}
+.bt{
+  background-color:rgb(131, 216, 92);
+  margin-left: 80%;
+}
+.hd{
+  margin-top: 5rpx;
+}
+.lb{
+  height: 10rpx;
+}

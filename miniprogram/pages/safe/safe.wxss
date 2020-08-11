@@ -1,0 +1,3 @@
+/* pages/safe/safe.wxss */
+.title{font-size: 50rpx; color: rgb(33, 33, 230);}
+.content{font-size: 30rpx;}

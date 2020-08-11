@@ -1,0 +1,67 @@
+<view class="zc"> 
+<text> 第{{week}}周 </text>
+</view>
+<!--功能按钮部分-->
+<view class="funcMd" >
+<button hover-class="bt1" bindtap="bt1"> 新生 </button>
+<button hover-class="bt2" bindtap="bt2" >学习</button>
+<button hover-class="bt3" bindtap="bt3">生活</button>
+
+</view>
+<!-- 功能页-->
+<view class="gny" >
+<!--新生模块-->
+<view wx:if="{{bt == 1}}">
+<!--地图-->
+<navigator class="map" url="/pages/map/map" >
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/地图.png"
+ class="im" mode="widthFix"></image>
+<text space="ensp" > 校园地图</text>
+</navigator>
+<!--安全须知-->
+<navigator class="gn2" url="/pages/safe/safe">
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/安全提示 (1).png"
+ class="im" mode="widthFix"></image>
+<text space="ensp"> 安全须知 </text>
+</navigator>
+<!--问学长-->
+<navigator class="gn2" url="/pages/wzx/wzx">
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/提问问题@2x.png"
+ class="im" mode="widthFix"></image>
+<text space="ensp"> 问学长 </text>
+</navigator>
+</view>
+<!--学习模块-->
+<view wx:if="{{bt == 2}}" >
+
+<navigator url = "/pages/subject/subject" class="kb">
+<text>我的课表</text>
+</navigator>
+
+<navigator url="/pages/learnmb/learnmb" class="kb" >
+<text>学习目标</text>
+</navigator>
+<navigator url="/pages/wenj/wenj" class="kb">
+<text>问卷调查</text>
+</navigator>
+
+</view>
+<!--生活模块-->
+<view wx:if="{{bt == 3}}">
+<navigator class="qr" url="/pages/code/code" >
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/二维码.png"
+mode="widthFix" ></image>
+<text space="ensp">我的二维码</text>
+</navigator>
+
+<navigator class="qr" url="" >
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/市场.png"
+mode="widthFix">
+</image>
+<text space="ensp">杂货市场</text>
+</navigator> 
+
+</view>
+
+
+</view>

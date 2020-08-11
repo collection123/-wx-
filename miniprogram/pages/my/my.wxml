@@ -1,0 +1,56 @@
+<!-- 用户 openid -->
+
+<view class="user">
+<view class="userinfo">
+   <image src="{{userPhoto}}"/>
+   <view wx:if="{{logged}}" class="info" >
+   <text class="nic" space="ensp"> {{nickname}}</text>
+   <view>
+   <text space="ensp" class="bingwz">  {{bindxx}}</text>
+   
+   </view>
+  <!--  bindGetUserInfo--> 
+   </view>
+    <button  wx:else   
+    open-type="getUserInfo" bindgetuserinfo="onGotUserInfo"
+    disabled="{{disable}}" class="btndl" >微信登录</button>
+</view>
+</view>
+
+
+<view class="my1">
+<navigator>更改我的资料
+</navigator>
+
+</view>
+
+<view class="my2">
+
+
+</view>
+
+<view class="my3">
+
+
+</view>
+
+<view class="my4">
+
+
+</view>
+
+
+<form bindsubmit="sfbing"  wx:if="{{ logged && !bind}}">
+<view class="inputk">
+<image src="/image/xh.png" mode="widthFix"></image>
+<input class="xh" maxlength="10" placeholder="请输入您的学号..."
+ name="stuId"></input>
+</view>
+
+<view class="inputxm">
+<image src="/image/xm.png" mode="widthFix"></image>
+<input class="xm" placeholder="请输入您的姓名..." name="name" ></input>
+
+</view>
+<button type="primary" form-type="submit" >提交数据</button>
+</form>

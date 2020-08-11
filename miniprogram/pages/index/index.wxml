@@ -1,0 +1,83 @@
+<!--
+<swiper class="banner"  indicator-dots indicator-active-color="#fff" autoplay  circular>
+  <swiper-item>
+  <image src="http://5b0988e595225.cdn.sohucs.com/images/20200330/51280e5421dd4c44bf127ce191f0d69a.jpeg" ></image>
+   </swiper-item>
+  <swiper-item> 
+  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592672747961&di=dbfcc6151884d64cfbabea76dbaf38e9&imgtype=0&src=http%3A%2F%2F8286130.s21i.faiusr.com%2F2%2Fabuiabacgaagzuh4zauooitrmzcaidjifq.jpg"></image>
+   </swiper-item>
+  <swiper-item> 
+  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592672747954&di=2c7cc3a25f913c83cde6d359590471be&imgtype=0&src=http%3A%2F%2Fshwilling.ufile.ucloud.com.cn%2Fuploads%2Fueditor%2Fimage%2F20161213%2F1481612109487961.jpg"></image>
+  </swiper-item>
+</swiper>
+-->
+
+<view class="sx" wx:key="index">
+  <image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/竖线.png" mode="widthFix"></image>
+  <text >校园博客：</text>
+</view>
+
+<view class="pubbk" wx:key="index">
+  <navigator  url="/pages/blog/blog" class="nav">
+    <text space="ensp">  +</text>
+  </navigator>
+    <button class="btn0"></button>
+    <button bindtap="btn1" hover-class="btn" >最新</button>
+    <button bindtap="btn2"  hover-class="btn">热点</button>
+</view>
+
+<!--最新模块-->
+<view wx:if="{{button == 1}}" class="zx">
+    <view wx:for="{{blog}}" class="zxbk" wx:for-index="xb" wx:for-item="bk" wx:key="index" >
+        {{bk.title}} 
+        <text class="author" >{{bk.author}} </text>
+        <text class="content">
+           {{bk.content}}
+        </text>
+           <view wx:for="{{feilid}}" wx:for-item="tp" wx:for-index="tb"
+           class="img_box" wx:key="index">
+           <view wx:if="{{bk.picture>0 && xb == tb}}" wx:for="{{tp.picid}}" 
+           class="imgs" wx:key="index">
+           <image src="{{item}}" bindtap="PreviewImg" mode='widthFix' data-index="{{tb}}"></image>  
+           </view>
+           </view>
+
+           <view class="timp">
+           <text  >{{bk.time}}</text>
+           <text bindtap="zan" space="emsp" class="zan" data-index="{{bk._id}}">     赞：{{bk.tip +dz }}</text>
+           </view>
+    </view>
+</view>
+<block wx:if="{{button == 1}}">
+<view class="dbwz"  >上拉刷新... </view>
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/首页底图.jpg" 
+mode="widthFix" class="dbtp"  ></image>
+</block>
+
+<!--热点模块-->
+<view wx:if="{{button == 2}}" class="hot">
+<view wx:for="{{blog}}" class="zxbk" wx:for-index="xb" wx:for-item="bk" wx:key="index" >
+        {{bk.title}} 
+        <text class="author" >{{bk.author}} </text>
+        <text class="content">
+           {{bk.content}}
+        </text>
+           <view wx:for="{{feilid}}" wx:for-item="tp" wx:for-index="tb"
+           class="img_box" wx:key="index">
+           <view wx:if="{{bk.picture>0 && xb == tb}}" wx:for="{{tp.picid}}" 
+           class="imgs" wx:key="index">
+           <image src="{{item}}" bindtap="PreviewImg" mode='widthFix' data-index="{{tb}}"></image>  
+           </view>
+           </view>
+
+           <view class="timp">
+           <text  >{{bk.time}}</text>
+           <text bindtap="zan" space="emsp" class="zan" data-index="{{bk._id}}">     赞：{{bk.tip +dz }}</text>
+           </view>
+    </view>
+<block wx:if="{{button == 2}}">
+<view class="dbwz"  >上拉刷新... </view>
+<image src="cloud://tcu-h0jcu.7463-tcu-h0jcu-1302480324/picture/首页底图.jpg" 
+mode="widthFix" class="dbtp"  ></image>
+</block>
+</view>

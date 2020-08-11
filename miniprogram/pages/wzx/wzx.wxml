@@ -1,0 +1,29 @@
+<!--pages/wzx/wzx.wxml-->
+<view class="fir">
+<form bindsubmit="tjbd">
+<textarea class="sr" maxlength="140" name="nr" placeholder="除了偶然一切皆有答案..."
+></textarea> 
+<button type="primary"  form-type="submit"  >提问</button>
+</form>
+</view>
+
+<view wx:for="{{question}}" wx:key="index" class="wt" >
+<text space="ensp">  {{item.tiwen}}</text>
+<view class="kb"></view>
+
+<form bindsubmit="tjpl">
+<label class="lb">学长学姐说:</label>
+<view wx:for="{{item.answer}}" wx:key="index">
+<text  class="hd">{{index+1}}楼：{{item}}</text>
+</view>
+
+<input placeholder="留言..." name="pl" class="pl" maxlength="30" ></input>
+<button size="mini" form-type='submit' class="bt" data-id="{{item._id}}" 
+data-index="{{index}}">
+
+<text>发送</text>
+</button>
+</form>
+
+</view>
+
